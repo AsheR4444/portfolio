@@ -1,0 +1,66 @@
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto; }
+  @media (max-width: 991px) {
+    .container {
+      max-width: 750px; } }
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      padding: 0 20px; } }
+
+.section {
+  padding: 100px 0; }
+
+.section-title {
+  font-weight: bold;
+  font-size: 25px; }
+
+.section__title {
+  margin-bottom: 100px; }
+
+.header {
+  background: #7c4dff; }
+  .header-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+  .header__text h1 {
+    font-size: 55px;
+    margin-bottom: 10px; }
+  .header__text h2 {
+    font-size: 46px;
+    margin-bottom: 20px; }
+  .header__text p {
+    font-size: 46px; }
+
+.about {
+  padding-top: 100px;
+  background: #d1c4e9; }
+  .about-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center; }
+  .about__skills {
+    flex-basis: 80%; }
+  .about__img {
+    flex-basis: 30%; }
+
+.portfolio .gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.portfolio .gallery-item {
+  max-width: 33%;
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 30px; }
+  .portfolio .gallery-item img:hover {
+    transition: 1s;
+    transform: scale(1.5); }

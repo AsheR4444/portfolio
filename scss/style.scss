@@ -1,0 +1,95 @@
+// == common ==
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  @media (max-width: 991px) {
+    max-width: 750px;
+  }
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+.section {
+  padding: 100px 0;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 25px;
+}
+.section__title {
+  margin-bottom: 100px;
+}
+// == /common ==
+
+// == Header ==
+.header {
+  background: #7c4dff;
+  &-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__text {
+    h1 {
+      font-size: 55px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 46px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 46px;
+    }
+  }
+  &__text {
+  }
+}
+// == /Header ==
+// == About ==
+.about {
+  padding-top: 100px;
+  background: #d1c4e9;
+  &-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  &__skills {
+    flex-basis: 80%;
+  }
+  &__img {
+    flex-basis: 30%;
+    img {
+    }
+  }
+}
+// == /About ==
+
+// == Portfolio ==
+.portfolio {
+  .gallery {
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &-item {
+      max-width: 33%;
+      padding: 20px;
+      background: #fff;
+      margin-bottom: 30px;
+      img:hover {
+        transition: 1s;
+        transform: scale(1.5);
+      }
+    }
+  }
+}
+// == /Portfolio ==
