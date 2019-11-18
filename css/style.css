@@ -3,7 +3,7 @@ body {
   font-family: "Montserrat", sans-serif; }
 
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto; }
   @media (max-width: 991px) {
     .container {
@@ -51,16 +51,19 @@ body {
   .about__img {
     flex-basis: 30%; }
 
-.portfolio .gallery-wrapper {
+.gallery-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: space-around;
+  padding: 20px; }
 
-.portfolio .gallery-item {
-  max-width: 33%;
-  padding: 20px;
-  background: #fff;
+.gallery-item {
+  width: 30%;
   margin-bottom: 30px; }
-  .portfolio .gallery-item img:hover {
+  .gallery-item img:hover {
     transition: 1s;
-    transform: scale(1.5); }
+    transform: scale(1.2); }
+
+@media (max-width: 768px) {
+  .gallery-item {
+    width: 50%; } }
